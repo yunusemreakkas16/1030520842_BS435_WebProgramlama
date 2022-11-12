@@ -1,13 +1,22 @@
 package org.webp;
+import org.hibernate.validator.constraints.Length;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 public class Oyuncular {
     @Id @GeneratedValue
     private Long Oyuncu_Id;
+
+    @NotBlank
+    @Length(min=1, max = 128)
     private String Oyuncu_Adi;
+
+    @NotBlank
+    @Length(min=1, max = 128)
     private String Oyuncu_Soy_Adi;
 
 

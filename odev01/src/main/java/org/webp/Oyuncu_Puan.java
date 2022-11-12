@@ -1,14 +1,18 @@
 package org.webp;
 
+import org.hibernate.validator.constraints.Length;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 public class Oyuncu_Puan {
     @Id @GeneratedValue
     private Long Puan_Id;
+
     private Long Puan;
     @ManyToOne
     private Oyuncular Oyuncu_Id;
