@@ -10,7 +10,7 @@ public class Oyuncular {
     private String Oyuncu_Adi;
     private String Oyuncu_Soy_Adi;
 
-    
+
 
     public Long getOyuncu_Id() {
         return Oyuncu_Id;

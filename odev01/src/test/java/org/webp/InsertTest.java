@@ -50,7 +50,7 @@ public class InsertTest {
 
 
     @Test
-    public void insertMovie() {
+    public void insertOyuncu() {
 
         Oyuncular oyuncu = new Oyuncular();
         oyuncu.setOyuncu_Id(1L);
@@ -60,13 +60,13 @@ public class InsertTest {
     }
 
     @Test
-    public void insertSong() {
+    public void insertOyun() {
 
         Oyunlar oyun = new Oyunlar();
         oyun.setOyun_Id(2L);
 
         boolean persisted = persistInATransaction(oyun);
-        assertTrue(persisted); // "Song" adında bir tablo yok
+        assertTrue(persisted); 
     }
 
 }
