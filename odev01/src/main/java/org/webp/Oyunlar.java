@@ -8,13 +8,13 @@ public class Oyunlar {
 
     @Id @GeneratedValue
     private Long Oyun_Id;
-    private Long Oyun_Adı;
+    private String Oyun_Adı;
 
     public Long getOyun_Id() {
         return Oyun_Id;
     }
 
-    public Long getOyun_Adı() {
+    public String getOyun_Adı() {
         return Oyun_Adı;
     }
 
@@ -22,11 +22,12 @@ public class Oyunlar {
         Oyun_Id = oyun_Id;
     }
 
-    public void setOyun_Adı(Long oyun_Adı) {
+    public void setOyun_Adı(String oyun_Adı) {
         Oyun_Adı = oyun_Adı;
     }
 
     public Oyunlar() {
     }
+
 }
 
