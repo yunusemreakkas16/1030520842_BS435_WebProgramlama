@@ -1,2 +1,1 @@
-
- 
+Creating Tables with JPA
